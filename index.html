@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="description" content="">
+        <link href='assets/libs/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+        <link rel="stylesheet" href="./assets/css/common.css">
+    </head>
+    <body>
+        <div class="container" >
+            <div class="res-masthead">
+                <div class="content">
+                    <span class="res-icon res-icon-outline">R</span> 
+                    <p class="lead">Order delicious food online!</p> 
+                    <p class="lead">Find the best restaurants</p> 
+                    <form class="search">
+                        <div class="input-group">
+                            <input class="form-control" id="search-loc" placeholder="Search by location to get restaurants or cuisines..." type="text">
+                            <span class="input-group-btn">
+                                <button class="btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="map"></div>
+            <div id="res-list" class="row"></div>
+        </div>
+        <div class="template hide">
+            <div class="res-item">
+                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                    <div class="res">
+                        <div class="res-content">
+                            <div class="res-thumb" ></div>
+                            <p class="res-title"></p>
+                            <div class="res-city"></div>
+                            <address class="res-address"></address>
+                            <div class="res-more-details">
+                                <span class="title">CUISINES</span><span class="cuisines"></span><br />
+                                <span class="title">COST FOR TWO</span><span class="cost-for-two"></span><br />
+                                <span class="title">Online Delivery</span><span class="has-online-delivery"><i class="glyphicon"></i></span>
+
+                            </div>
+                            <div class="res-user-rating">
+                                <span class="aggregate_rating"></span>
+                                <span class="rating_text"></span>
+                                <span class="votes"></span>
+                            </div>
+                        </div>
+                        <div class="res-footer">
+                            <a href="" class="booking_url">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/js/jquery/jquery-2.0.2.min.js"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBfw_FdNhYbG_lqCtfu8P5sgCRJZ3lWGc&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="./assets/js/common.js"></script>
+</html>
